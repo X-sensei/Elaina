@@ -60,7 +60,7 @@ const startAtlas = async () => {
 
   const { saveState, state, clearState } = await getAuthFromDatabase();
   console.log(
-    figlet.textSync("ATLAS", {
+    figlet.textSync("ELAINA", {
       font: "Standard",
       horizontalLayout: "default",
       vertivalLayout: "default",
@@ -77,7 +77,7 @@ const startAtlas = async () => {
   const Atlas = atlasConnect({
     logger: pino({ level: "silent" }),
     printQRInTerminal: true,
-    browser: ["Atlas", "Safari", "1.0.0"],
+    browser: ["Elaina", "Safari", "1.0.0"],
     auth: state,
     version,
   });
