@@ -401,7 +401,7 @@ module.exports = {
         }
         await doReact("👋");
         await Atlas.sendMessage(m.from, {
-          image: { url: "https://wallpapercave.com/wp/wp9667218.png" },
+          image: { url: "https://i.ibb.co/T4QmqJC/20230210-170626.jpg" },
           caption: `I'm Leaving this group on request... \n\nTake care everyone :)`,
           mentions: participants.map((a) => a.id),
           quoted: m,
