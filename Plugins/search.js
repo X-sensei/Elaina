@@ -167,7 +167,7 @@ module.exports = {
         if (!text) {
           await doReact("❔");
           return m.reply(
-            `Please provide an ringtone Search Term !\n\n*${prefix}weather Kolkata*`
+            `Please provide an ringtone Search Term !\n\n*${prefix}weather Assam*`
           );
 
         }
@@ -196,7 +196,7 @@ module.exports = {
         if (!text) {
           await doReact("❔");
           return m.reply(
-            `Please provide a sticker Search Term !\n\n*${prefix}stickersearch Cheems bonk*`
+            `Please provide a sticker Search Term !\n\n*${prefix}stickersearch Elaina bonk*`
           );
         }
         await doReact("🧧");
@@ -229,7 +229,7 @@ module.exports = {
         if (!text) {
           await doReact("❔");
           return m.reply(
-            `Please provide a valid *Github* username!\n\nExample: *${prefix}gh FantoX001*`
+            `Please provide a valid *Github* username!\n\nExample: *${prefix}gh Ronen6999*`
           );
         }
         await doReact("📊");
