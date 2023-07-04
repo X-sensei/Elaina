@@ -245,7 +245,7 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
       let txtSender = m.quoted ? m.quoted.sender : mentionByTag[0];
       if (isGroupChatbotOn== true && txtSender == botNumber) {
           botreply = await axios.get(
-            `http://api.brainshop.ai/get?bid=172352&key=vTmMboAxoXfsKEQQ&uid=[uid]&msg=[${budy}]`
+            `http://api.brainshop.ai/get?bid=172563&key=NIjX07K5vYiKrWLN&uid=[uid]&msg=[${budy}]`
           );
           txtChatbot = `${botreply.data.cnt}`;
           setTimeout(function () {
@@ -258,7 +258,7 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
     if (!m.isGroup && !isCmd && !icmd) {
       if (isPmChatbotOn == true) {
           botreply = await axios.get(
-            `http://api.brainshop.ai/get?bid=172352&key=vTmMboAxoXfsKEQQ&uid=[uid]&msg=[${budy}]`
+            `http://api.brainshop.ai/get?bid=172563&key=NIjX07K5vYiKrWLN&uid=[uid]&msg=[${budy}]`
           );
           txtChatbot = `${botreply.data.cnt}`;
           setTimeout(function () {
