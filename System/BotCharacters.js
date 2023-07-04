@@ -72,7 +72,7 @@ global.charID0 = {
     botImage3 : "https://w0.peakpx.com/wallpaper/633/289/HD-wallpaper-anime-the-journey-of-elaina-elaina-the-journey-of-elaina-majo-no-tabitabi.jpg",
     botImage4 : "https://e1.pxfuel.com/desktop-wallpaper/213/398/desktop-wallpaper-icons-elaina-elaina-aesthetic.jpg",
     botImage5 : "https://w0.peakpx.com/wallpaper/733/684/HD-wallpaper-anime-the-journey-of-elaina-elaina-the-journey-of-elaina-majo-no-tabitabi.jpg",
-    botImage6 : "https://i.imgur.com/MClOeqe.jpeg",
+    botImage6 : "https://w0.peakpx.com/wallpaper/419/963/HD-wallpaper-anime-the-journey-of-elaina-elaina-the-journey-of-elaina.jpg",
 }
 
 global.charID1 = {
