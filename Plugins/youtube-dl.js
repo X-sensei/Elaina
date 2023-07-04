@@ -34,7 +34,7 @@ module.exports = {
         if (!text) {
           await doReact("❌");
           return m.reply(
-            `Please provide a song name !\n\nExample: *${prefix}song despacito*`
+            `Please provide a song name !\n\nExample: *${prefix}song Doreamon theme song*`
           );
         }
         await doReact("📥");
