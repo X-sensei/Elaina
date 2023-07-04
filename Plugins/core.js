@@ -32,9 +32,9 @@ module.exports = {
           repo.license.name
         }\n*📁 Repo Size:* ${(repo.size / 1024).toFixed(
           2
-        )} MB\n*📅 Last Updated:* ${repo.updated_at}\n\n*🔗 Repo Link:* ${
-          repo.html_url
-        }\n\n❝ Dont forget to give a Star ⭐ to the repo. It's made with restless hardwork by *Team ATLAS*. ❞\n\n*©️ Team ATLAS- 2023*`;
+        )} MB\n*📅 Last Updated:* ${repo.updated_at}\n\n*🔗 Repo Link:* 
+        https://github.com/X-sensei/elaina2
+        \n\n❝ Dont forget to give a Star ⭐ to the repo. It's made with restless hardwork by *Team ATLAS* and modified by *Ronen*. ❞\n\n*©️ Ronen-Bots 2023*`;
         Atlas.sendMessage(m.from, { image: pic, caption: txt }, { quoted: m });
         break;
 
