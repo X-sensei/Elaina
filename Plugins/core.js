@@ -83,11 +83,11 @@ module.exports = {
               file.replace(".js", "").charAt(0).toUpperCase() +
               file.replace(".js", "").slice(1);
 
-            formatted += `╟   🏮 *${capitalizedFile}* 🏮   ╢\n\n`;
+            formatted += `🔖*${capitalizedFile}*    \n\n`;
             //formatted += `\`\`\`${commands.join("\n")}\`\`\`\n\n\n`;
             // Adding a - before each command
             formatted += `\`\`\`${commands
-              .map((cmd) => `⥼   ${prefix + cmd}`)
+              .map((cmd) => `${cmd}`)
               .join("\n")}\`\`\`\n\n\n`;
           }
 
@@ -98,7 +98,14 @@ module.exports = {
 
         const allCommands = readUniqueCommands(pluginsDir);
         const formattedCommands = formatCommands(allCommands);
-        var helpText = `\nKonnichiwa *${pushName}* Senpai,\n\nI am *${botName}*, a WhatsApp bot built to take your boring WhatsApp experience into next level.\n\n*🔖 My Prefix is:*  ${prefix}\n\n${formattedCommands}\n\n\n*©️ Team ATLAS- 2023*`;
+        var helpText = `\n─「(💙^💙」
+│⋊ 𝕌𝕤𝕖𝕣: *${pushName}*
+│⋊ ℕ𝕒𝕞𝕖: *${botName}*
+│⋊ ℙ𝕣𝕖𝕗𝕚𝕩: *${prefix}*
+│⋊ 𝕆𝕨𝕟𝕖𝕣: *Ronen🎐*
+│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: http://surl.li/eumln
+╰────────────┈エリーナ  
+Here's the list of my Commands.\n\n${formattedCommands}\n\n\n*©️ Ronen-Bots- 2023*`;
         await Atlas.sendMessage(
           m.from,
           { video: { url: botVideo }, gifPlayback: true, caption: helpText },
