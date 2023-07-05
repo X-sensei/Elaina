@@ -1,6 +1,6 @@
 <p align="center">
 <a href="https://github.com/X-sensei/elaina2">
-    <img src="[https://i.ibb.co/2gdVrky/20230210-160408.jpg]">
+    <img src="https://i.ibb.co/2gdVrky/20230210-160408.jpg">
   </a>
 
 <h1 align="center"> Elaina MD
