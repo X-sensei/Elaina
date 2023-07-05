@@ -1,21 +1,21 @@
 <p align="center">
-<a href="https://github.com/FantoX001/Atlas-MD">
-    <img src="https://i.imgur.com/MClOeqe.jpeg">
+<a href="https://github.com/X-sensei/elaina2">
+    <img src="[https://i.ibb.co/2gdVrky/20230210-160408.jpg]">
   </a>
 
-<h1 align="center"> Atlas MD
+<h1 align="center"> Elaina MD
 </h1>
 
 <p align="center"> 
-Konnichiwa Senpai, I am "Atlas" an Opensource WhatsApp bot made by <a href="https://github.com/FantoX001">FantoX</a> and his team "Atlas" to do everything that's beyond imagination with highest <b>Features</b> and <b>Stability</b> and <b>Compatibility</b> built with Baileys Multi Device support.
+Konnichiwa Senpai, I am "Elaina" an Opensource WhatsApp bot made by <a href="https://github.com/FantoX001">FantoX</a> and his team "Atlas" and modified by "Ronen" to do everything that's beyond imagination with highest <b>Features</b> and <b>Stability</b> and <b>Compatibility</b> built with Baileys Multi Device support.
 
-<h3 align="center"> Atlas MD - The Future Is Here
+<h3 align="center"> Elaina MD - The Future Is Here
 </h4>
 
 <br>
 
 <p align="center">
-  <a href="https://github.com/FantoX001/Atlas-MD/fork">
+  <a href="https://github.com/X-sensei/elaina2/fork">
     <img src="https://img.shields.io/github/forks/FantoX001/Atlas-MD?label=Fork&style=social">
     
     
@@ -44,7 +44,7 @@ Konnichiwa Senpai, I am "Atlas" an Opensource WhatsApp bot made by <a href="http
 ---
  <br>
  
- # 🧩 Deploy Atlas
+ # 🧩 Deploy ELAINA
      
 <details close>
 <summary>Click to choose your favourite platform to Deploy</summary>
@@ -197,14 +197,14 @@ Konnichiwa Senpai, I am "Atlas" an Opensource WhatsApp bot made by <a href="http
 
     
     
-# 📑 Atlas Deploy and Hosting guide
+# 📑 Elaina Deploy and Hosting guide
 
 <details close>
 <summary>Click to read Deploy Manual</summary>    
     
 ## 🔶 Repl.it Deploy:
       
-- [Fork Main Repo](https://github.com/FantoX001/Atlas-MD/fork)
+- [Fork Main Repo](https://github.com/X-sensei/elaina2/fork)
 - Create a MongoDB URL. Need help? Watch this short 1 minute [Video Guide](https://youtube.com/shorts/pIHvoXkwmq4?feature=share) for MongoDB URL.
 - Click on `Deploy to Repl.it` button ( `For those who didn't modified bot.`). In other case (`For those who modified bot.`) edit README.md file and chage the repo link of Repl.it deply button from `https://github.com/Fantox01/Atlas-MD` to your fork URL `https://github.com/<Your GitHub Username>/<Your Atlas fork repo name>`.
 - After cloning is done in Repl.it go to `Secrets` in your Repl.it project and put these values (Mandatory).
@@ -235,7 +235,7 @@ TENOR_API_KEY | Your tenor API key if you have. Or use this public one: `AIzaSyC
       
 ## ⚛️ Heroku Deploy:
       
-- [Fork Main Repo](https://github.com/FantoX001/Atlas-MD/fork)
+- [Fork Main Repo](https://github.com/X-sensei/elaina2/fork)
 - Create a MongoDB URL. Need help? Watch this short 1 minute [Video Guide](https://youtube.com/shorts/pIHvoXkwmq4?feature=share) for MongoDB URL.
 - Click on `Deploy to Heroku` button ( `For those who didn't modified bot.`). In other case (`For those who modified bot.`) edit README.md file and chage the repo link of Repl.it deply button from `https://github.com/Fantox01/Atlas-MD` to your fork URL `https://github.com/<Your GitHub Username>/<Your Atlas fork repo name>` also got to `app.json` and change `Website` ans `Repository` link from my link to your link. Then click on `Deploy to Heroku` button.
 - Then put these values in environment variables accordint to instructions (Mandatory).
@@ -264,7 +264,7 @@ TENOR_API_KEY | Your tenor API key if you have. Or use this public one: `AIzaSyC
     
       
 ## 🔷 Railway Deploy:   
-- [Fork Main Repo](https://github.com/FantoX001/Atlas-MD/fork)
+- [Fork Main Repo](https://github.com/X-sensei/elaina2/fork)
 - Create a MongoDB URL. Need help? Watch this short 1 minute [Video Guide](https://youtube.com/shorts/pIHvoXkwmq4?feature=share) for MongoDB URL.
 - Click on `Deploy to Railway` button ( `For those who didn't modified bot.`). If you modified bot and want to deploy your modified version in Railway then that button will not help you. Go to Railway website and deploy github repo from there manually.
 - Those who are deploying through button: Put all necessary details there according to instructions given there.
@@ -293,7 +293,7 @@ TENOR_API_KEY | Your tenor API key if you have. Or use this public one: `AIzaSyC
       
       
 ## ❇️ Koyeb Deploy:   
-- [Fork Main Repo](https://github.com/FantoX001/Atlas-MD/fork)
+- [Fork Main Repo](https://github.com/X-sensei/elaina2/fork)
 - Create a MongoDB URL. Need help? Watch this short 1 minute [Video Guide](https://youtube.com/shorts/pIHvoXkwmq4?feature=share) for MongoDB URL.
 - Click on `Deploy to Railway` button ( `For those who didn't modified bot.`). If you modified bot and want to deploy your modified version `I'm sorry to say as Koyeb works through Quay.io hosted docker so you can't deploy your modified version in fully 100% working state.` Though you can deploy manually your Github repo in Koyeb but in that case bot's 100% commands will not work.
 - Those who are deploying through button: Put all necessary details there according to instructions given there (Don't forget to change MongoDB URL an put your URL).
@@ -393,7 +393,7 @@ npm i
 npm start
 
 ``` 
-- Note in `git clone <my bot's repo>` section your can use Your customised bot's github link too (For that make sure you [Forked](https://github.com/FantoX001/Atlas-MD/fork) this repo and modified `.env` file and `config.js`).
+- Note in `git clone <my bot's repo>` section your can use Your customised bot's github link too (For that make sure you [Forked](https://github.com/X-sensei/elaina2/fork) this repo and modified `.env` file and `config.js`).
 - This method will work on most other bots too.
 
 #### 📌 To stop a bot in Userland
@@ -514,7 +514,7 @@ https://gist.githubusercontent.com/FantoX001/804c106f1f2fb1ae46e9bd63f854069d/ra
 </h4>
 
 <p align="center" >
-<a href="https://cutt.ly/AtlasSupportStrict"><img src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" width="140px">
+<a href="https://chat.whatsapp.com/Hooxu1kZEoFKoNpdFLqXMO"><img src="https://img.shields.io/badge/Join Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" width="140px">
 </a>
 </p>
     
@@ -522,7 +522,7 @@ https://gist.githubusercontent.com/FantoX001/804c106f1f2fb1ae46e9bd63f854069d/ra
 <br>
     
 
-# ⚡️ Atlas Platform Compatibility:
+# ⚡️ Elaina Platform Compatibility:
 <br>
 
 - Atlas offers highest platform compatibility.
@@ -531,7 +531,7 @@ https://gist.githubusercontent.com/FantoX001/804c106f1f2fb1ae46e9bd63f854069d/ra
       
 <br>
       
-# 💫 Dependencies of Atlas:
+# 💫 Dependencies of Elaina:
 
 <br>
 
@@ -567,7 +567,7 @@ https://gist.githubusercontent.com/FantoX001/804c106f1f2fb1ae46e9bd63f854069d/ra
 <br>
      
 
-# 〽️ Why Should You Use Atlas as your Base:
+# 〽️ Why Should You Use Elaina as your Base:
 
       
 <details close>
@@ -623,7 +623,7 @@ https://gist.githubusercontent.com/FantoX001/804c106f1f2fb1ae46e9bd63f854069d/ra
 ---
 <br>
 
-<h2 align="center">🔰 Meet Team Atlas 🔰
+<h2 align="center">🔰 Meet Team Elaina 🔰
 </h2>
 
 [![Fantox](https://github.com/FantoX001.png)](https://github.com/FantoX001)  | [![Ahmii-kun](https://github.com/Ahmii-kun.png)](https://github.com/Ahmii-kun) | [![Pratyush](https://github.com/pratyush4932.png)](https://github.com/pratyush4932) | [![Devime](https://github.com/Devime69.png)](https://github.com/Devime69) | [![Kai](https://github.com/Kai0071.png)](https://github.com/Kai0071) | [![JayJay Ops](https://github.com/jayjay-ops.png)](https://github.com/jayjay-ops)
