@@ -40,7 +40,7 @@ module.exports = {
 
       case "support":
       case "supportgc":
-        await doReact("🔰");
+        await doReact("🎀");
         let txt2 = `              🧣 *Support Group* 🧣\n\n*${botName}* is an open source project, and we are always happy to help you.\n\n*Link:* ${suppL}\n\n*Note:* Please don't spam in the group, and don't message *Admins directly* without permission. Ask for help inside *Group*.\n\n*Thanks for using Atlas.*`;
         Atlas.sendMessage(m.from, { image: pic, caption: txt2 }, { quoted: m });
         break;
@@ -48,7 +48,7 @@ module.exports = {
       case "help":
       case "h":
       case "menu":
-        await doReact("☃️");
+        await doReact("🎐");
         await Atlas.sendPresenceUpdate("composing", m.from);
         function readUniqueCommands(dirPath) {
           const allCommands = [];
@@ -83,7 +83,7 @@ module.exports = {
               file.replace(".js", "").charAt(0).toUpperCase() +
               file.replace(".js", "").slice(1);
 
-            formatted += `🔖*${capitalizedFile}:* \n\n`;
+            formatted += `🔖 *${capitalizedFile}:* \n\n`;
             //formatted += `\`\`\`${commands.join("\n")}\`\`\`\n\n\n`;
             // Adding a - before each command
             formatted += `\`\`\`${commands
@@ -98,14 +98,14 @@ module.exports = {
 
         const allCommands = readUniqueCommands(pluginsDir);
         const formattedCommands = formatCommands(allCommands);
-        var helpText = `\n─「(💙^💙」
+        var helpText = `\n「(💙^💙」
 │⋊ 𝕌𝕤𝕖𝕣: *${pushName}*
 │⋊ ℕ𝕒𝕞𝕖: *${botName}*
 │⋊ ℙ𝕣𝕖𝕗𝕚𝕩: *${prefix}*
 │⋊ 𝕆𝕨𝕟𝕖𝕣: *Ronen🎐*
 │⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: http://surl.li/eumln
 ╰────────────┈エリーナ  
-Here's the list of my Commands.\n\n${formattedCommands}\n\n\n*©️ Ronen-Bots- 2023*`;
+Here's the list of my Commands.\n\n${formattedCommands}\n\n\n*🔱 Ronen-Bots- 2023*`;
         await Atlas.sendMessage(
           m.from,
           { video: { url: botVideo }, gifPlayback: true, caption: helpText },
