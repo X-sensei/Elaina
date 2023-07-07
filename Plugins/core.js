@@ -67,7 +67,7 @@ module.exports = {
             // Adding a - before each command
             formatted += `\`\`\`${commands
               .map((cmd) => `${cmd}`)
-              .join(",")}\`\`\`\n\n\n`;
+              .join(",")}\`\`\`\n\n`;
           }
 
           return formatted.trim();
