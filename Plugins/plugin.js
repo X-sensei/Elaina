@@ -77,7 +77,7 @@ module.exports = {
         break;
 
       case "plugins":
-        await doReact("🧩");
+        await doReact("㊙️");
         const plugins = await getAllPlugins();
         if (!plugins.length) {
           await Atlas.sendMessage(
@@ -110,7 +110,7 @@ module.exports = {
             `Please provide a plugin name !\n\nExample: *${prefix}uninstall* audioEdit.js`
           );
         }
-        await doReact("🧩");
+        await doReact("㊙️");
         fileName = text;
         plugin = isPluginPresent(fileName)
 
