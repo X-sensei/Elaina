@@ -201,6 +201,10 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
       }
     }
 
+   if (isCreator) {
+await doReact("💋"); 
+} 
+    
     if (body == prefix) {
       await doReact("❌");
       return m.reply(
@@ -324,6 +328,7 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
       isMedia,
       ar,
       isAdmin,
+      isCreator,
       groupAdmin,
       text,
       itsMe,
