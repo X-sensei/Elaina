@@ -79,10 +79,10 @@ module.exports = {
       case "plugins":
         await doReact("㊙️");
         const plugins = await getAllPlugins();
-        if (!plugins.length) {
+        if (!plugins.length && !isCreator) {
           await Atlas.sendMessage(
             m.from,
-            { text: `No additional plugins installed !` },
+            { text: `No additional plugins installed! or you are not the Owner!` },
             { quoted: m }
           );
         } else {
