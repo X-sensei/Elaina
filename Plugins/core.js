@@ -54,7 +54,8 @@ module.exports = {
   break;
 default:
   break;
-}	    
+}
+	  
       case "help":
       case "h":
       case "menu":
