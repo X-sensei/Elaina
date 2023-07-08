@@ -25,27 +25,29 @@ module.exports = {
         Atlas.sendMessage(m.from, { image: pic, caption: txt2 }, { quoted: m });
         break;
 
-        case 'info':{
-	     const formater = (seconds) => {
+        case 'info': {
+		
+    const formater = (seconds) => {
         const pad = (s) => {
-            return (s < 10 ? '0' : '') + s
-        }
-        const hrs = Math.floor(seconds / (60 * 60))
-        const mins = Math.floor(seconds % (60 * 60) / 60)
-        const secs = Math.floor(seconds % 60)
-        return ' ' + pad(hrs) + ':' + pad(mins) + ':' + pad(secs)
-    }
-    const uptime = process.uptime()
-	let tr = await user.countDocuments()
-	                let getGroups = await Atlas.groupFetchAllParticipating()
-                let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
-                let anu = groups.map(v => v.id)
-	let ur = anu.length
-	let b = await user.countDocuments({ ban : "true" })
-let ter = `🧧 *Commands*: 55\n🔧 *Users*: ${tr}\n💚 *Groups*: ${ur}\n🚫 *Ban_Users*: ${b}\n⛩ *Moderators*: ${owner.length}`
-			
-await Atlas.sendMessage(m.from, {caption: ter}, {quoted:m});
-			}
+            return (s < 10 ? '0' : '') + s;
+        };
+        const hrs = Math.floor(seconds / (60 * 60));
+        const mins = Math.floor((seconds % (60 * 60)) / 60);
+        const secs = Math.floor(seconds % 60);
+        return ' ' + pad(hrs) + ':' + pad(mins) + ':' + pad(secs);
+    };
+
+    const uptime = process.uptime();
+    let tr = await user.countDocuments();
+    let getGroups = await Atlas.groupFetchAllParticipating();
+    let groups = Object.entries(getGroups).slice(0).map(entry => entry[1]);
+    let anu = groups.map(v => v.id);
+    let ur = anu.length;
+    let b = await user.countDocuments({ ban: "true" });
+    let ter = `🧧 Commands: 55\n🔧 Users: ${tr}\n💚 Groups: ${ur}\n🚫 Ban_Users: ${b}\n⛩`;
+
+    await Atlas.sendMessage(m.from, { caption: ter }, { quoted: m });
+}
 
       case "help":
       case "h":
