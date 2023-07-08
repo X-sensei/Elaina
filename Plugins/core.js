@@ -25,6 +25,36 @@ module.exports = {
         Atlas.sendMessage(m.from, { image: pic, caption: txt2 }, { quoted: m });
         break;
 		    
+	case 'info':
+  try {
+    const formater = (seconds) => {
+      const pad = (s) => {
+        return (s < 10 ? '0' : '') + s;
+      };
+      const hrs = Math.floor(seconds / (60 * 60));
+      const mins = Math.floor((seconds % (60 * 60)) / 60);
+      const secs = Math.floor(seconds % 60);
+      return ' ' + pad(hrs) + ':' + pad(mins) + ':' + pad(secs);
+    };
+
+    const uptime = process.uptime();
+    let tr = await user.countDocuments();
+    let getGroups = await Atlas.groupFetchAllParticipating();
+    let groups = Object.entries(getGroups).slice(0).map(entry => entry[1]);
+    let anu = groups.map(v => v.id);
+    let ur = anu.length;
+    let b = await user.countDocuments({ ban: "true" });
+    let ter = `🧧 Commands: 55\n🔧 Users: ${tr}\n💚 Groups: ${ur}\n🚫 Ban_Users: ${b}\n⛩`;
+
+    // Replace 'url dal image ki' with the actual image URL you want to send
+    await Atlas.sendMessage(m.from, { image: { url: 'https://i.ibb.co/3vNvjGc/PXL-20230225-211608710.jpg' }, caption: ter, quoted: m });
+  } catch (error) {
+    console.error(error);
+  }
+  break;
+default:
+  break;
+}	    
       case "help":
       case "h":
       case "menu":
