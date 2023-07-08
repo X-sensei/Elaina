@@ -7,6 +7,7 @@ let mergedCommands = [
   "menu",
   "support",
   "supportgc",
+	"info",
 ];
 
 module.exports = {
@@ -42,14 +43,9 @@ module.exports = {
 	let ur = anu.length
 	let b = await user.countDocuments({ ban : "true" })
 let ter = `🧧 *Commands*: 55\n🔧 *Users*: ${tr}\n💚 *Groups*: ${ur}\n🚫 *Ban_Users*: ${b}\n⛩ *Moderators*: ${owner.length}`
-console.log(ter)
-   let buttonMessaged = {
-        text: ter,
-        footer: '🔱Ronen-Bots',
-        headerType: 4
-    }
-await Atlas.sendMessage(m.chat,{quoted:m})
-}
+			
+await Atlas.sendMessage(m.from, {caption: ter}, {quoted:m});
+			}
 
       case "help":
       case "h":
