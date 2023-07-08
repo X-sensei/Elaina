@@ -202,7 +202,7 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
     }
 
    if (isCreator) {
-await doReact("💋"); 
+await doReact("🔱"); 
 } 
     
     if (body == prefix) {
@@ -312,7 +312,7 @@ await doReact("💋");
     };
     const uptime = () => formatTime(process.uptime());
 
-    let upTxt = `〘  ${botName} Personal Edition  〙    ⚡ Uptime: ${uptime()}`;
+    let upTxt = `〘  ${botName} Public Edition  〙    ⚡ Uptime: ${uptime()}`;
     Atlas.setStatus(upTxt);
 
     cmd.start(Atlas, m, {
