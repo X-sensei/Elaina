@@ -12,7 +12,7 @@ let mergedCommands = [
 module.exports = {
   name: "others",
   alias: [...mergedCommands],
-  uniquecommands: ["sc", "support"],
+  uniquecommands: ["info, support"],
   description: "All miscleaneous commands",
   start: async (Atlas, m, { pushName, prefix, inputCMD, doReact }) => {
     let pic = fs.readFileSync("./Assets/Atlas.jpg");
@@ -20,9 +20,36 @@ module.exports = {
             case "support":
       case "supportgc":
         await doReact("🎀");
-        let txt2 = `              🧣 *Support Group* 🧣\n\n*${botName}* is an Public Bot, and we are always happy to help you.\n\n*Link:* ${suppL}\n\n*Note:* Please don't spam in the group, and don't message *Admins directly* without permission. Ask for help inside *Group*.\n\n*Thanks for using Elaina✨.*`;
+        let txt2 = `              🧣 *Support Group* 🧣\n\n*${botName}* is a Public Bot, and we are always happy to help you.\n\n*Link:* ${suppL}\n\n*Note:* Please don't spam in the group, and don't message *Admins directly* without permission. Ask for help inside *Group*.\n\n*Thanks for using Elaina✨.*`;
         Atlas.sendMessage(m.from, { image: pic, caption: txt2 }, { quoted: m });
         break;
+
+        case 'info':{
+	     const formater = (seconds) => {
+        const pad = (s) => {
+            return (s < 10 ? '0' : '') + s
+        }
+        const hrs = Math.floor(seconds / (60 * 60))
+        const mins = Math.floor(seconds % (60 * 60) / 60)
+        const secs = Math.floor(seconds % 60)
+        return ' ' + pad(hrs) + ':' + pad(mins) + ':' + pad(secs)
+    }
+    const uptime = process.uptime()
+	let tr = await user.countDocuments()
+	                let getGroups = await Atlas.groupFetchAllParticipating()
+                let groups = Object.entries(getGroups).slice(0).map(entry => entry[1])
+                let anu = groups.map(v => v.id)
+	let ur = anu.length
+	let b = await user.countDocuments({ ban : "true" })
+let ter = `🧧 *Commands*: 55\n🔧 *Users*: ${tr}\n💚 *Groups*: ${ur}\n🚫 *Ban_Users*: ${b}\n⛩ *Moderators*: ${owner.length}`
+console.log(ter)
+   let buttonMessaged = {
+        text: ter,
+        footer: '🔱Ronen-Bots',
+        headerType: 4
+    }
+await Atlas.sendMessage(m.chat,{quoted:m})
+}
 
       case "help":
       case "h":
