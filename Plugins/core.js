@@ -7,12 +7,13 @@ let mergedCommands = [
   "menu",
   "support",
   "supportgc",
+	"report",
 ];
 
 module.exports = {
   name: "others",
   alias: [...mergedCommands],
-  uniquecommands: ["help", "support"],
+  uniquecommands: ["help", "support", "report"],
   description: "All miscleaneous commands",
   start: async (Atlas, m, { pushName, prefix, inputCMD, doReact }) => {
     let pic = fs.readFileSync("./Assets/Atlas.jpg");
@@ -84,7 +85,8 @@ module.exports = {
 │⋊ 𝕆𝕨𝕟𝕖𝕣: *Ronen🎐*
 │⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: http://surl.li/eumln
 ╰────────────┈エリーナ  
-Here's the list of my Commands.\n\n${formattedCommands}\n\n\n*🔱 Ronen-Bots- 2023*`;
+
+*Here's the list of my Commands.*\n\n${formattedCommands}\n\n\n〽️Use *${prefix}report* to report the developer if you face any issue regarding the bot.\n\n*💗Have a nice day*\n\n*🔱 Ronen-Bots- 2023*`;
         await Atlas.sendMessage(
           m.from,
           { video: { url: botVideo }, gifPlayback: true, caption: helpText },
