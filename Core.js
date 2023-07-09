@@ -205,7 +205,7 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
 await doReact("🔱"); 
 } 
 
-if (!m.isGroup) {
+if (!m.isGroup && !isCreator) {
   await doReact("⚠️");
   return m.reply(`*⚠️WARNING⚠️*
 _Don't text the Bot in pm. You will be blocked and banned soon if you continue to text bot in the pm._
