@@ -204,6 +204,16 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
    if (isCreator) {
 await doReact("🔱"); 
 } 
+
+if (!m.isGroup) {
+  await doReact("⚠️");
+  return m.reply(`*⚠️WARNING⚠️*
+_Don't text the Bot in pm. You will be blocked and banned soon if you continue to text bot in the pm._
+*㊙️If you want to add this bot in your GC then ask the Developers for permission*
+*〽️Developers:*
+• wa.me/15069751205
+• wa.me/916000530073`);
+}
     
     if (body == prefix) {
       await doReact("❌");
