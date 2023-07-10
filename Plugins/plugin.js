@@ -105,7 +105,7 @@ module.exports = {
             quoted: m,
           });
         }
-        if (!text) {
+        if (!text && isCreator) {
           return await m.reply(
             `Please provide a plugin name !\n\nExample: *${prefix}uninstall* audioEdit.js`
           );
@@ -145,7 +145,7 @@ module.exports = {
 *🎀 Name:* tiktokdl.js\n🔖 *Number of commands:* 4\n*🔱 Url:* https://gist.githubusercontent.com/FantoX001/481b039ef502a56339374b29b7491695/raw/854ed660349cc3fd45de89ce137721c674a03ec3/tiktokdl.js\n\n
 *🎀 Name:* nsfw-image.js\n🔖 *Number of commands:* 1\n*🔱 Url:* https://gist.githubusercontent.com/FantoX001/804c106f1f2fb1ae46e9bd63f854069d/raw/a93191b83c0cca44abb7e0e26b55caf2892f0bb4/nsfw-image.js\n\n
 *🎀 Name:* join.js\n🔖 *Number of commands:* 1\n*🔱 Url:* https://gist.githubusercontent.com/7thRA-ONE/58746067f3e332005738c36f2a510821/raw/cb1a55baec6a7f66aa6e34ea7de2c2cca6857258/Join.js\n\n
-*🎀 Name:* hi.js\n🔖 *Number of commands:* 1\n*🔱 Url:*https://gist.githubusercontent.com/7thRA-ONE/be7c2d6fcf068afbfb0ec83ee567aa71/raw/301e0350caff116015ea5cf4356419a4bbbb32f6/hi.js\n\n
+*🎀 Name:* hi.js\n🔖 *Number of commands:* 1\n*🔱 Url:* https://gist.githubusercontent.com/7thRA-ONE/be7c2d6fcf068afbfb0ec83ee567aa71/raw/301e0350caff116015ea5cf4356419a4bbbb32f6/hi.js\n\n
 
 ⚜️ To install a plugin type *install* _plugin-url_ !\n\nExample: *${prefix}install* https://gist.githubusercontent.com/FantoX001/xyz...\n\n⚜️ To uninstall a plugin type *uninstall* _plugin-name_ !\n\nExample: *${prefix}uninstall* audioEdit.js\n`;
           await Atlas.sendMessage(m.from, { image: {url: botImage1},caption: textssf }, { quoted: m });
