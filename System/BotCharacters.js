@@ -68,11 +68,11 @@ global.charID0 = {
     botName : "Elaina✨",
     botVideo : "https://graph.org/file/1b33af4a675ea4902dc10.mp4",
     botImage1 : "https://images2.alphacoders.com/968/968248.jpg",
-    botImage2 : "https://w0.peakpx.com/wallpaper/466/530/HD-wallpaper-anime-the-journey-of-elaina-elaina-the-journey-of-elaina.jpg",
-    botImage3 : "https://w0.peakpx.com/wallpaper/633/289/HD-wallpaper-anime-the-journey-of-elaina-elaina-the-journey-of-elaina-majo-no-tabitabi.jpg",
-    botImage4 : "https://e1.pxfuel.com/desktop-wallpaper/213/398/desktop-wallpaper-icons-elaina-elaina-aesthetic.jpg",
-    botImage5 : "https://w0.peakpx.com/wallpaper/733/684/HD-wallpaper-anime-the-journey-of-elaina-elaina-the-journey-of-elaina-majo-no-tabitabi.jpg",
-    botImage6 : "https://w0.peakpx.com/wallpaper/419/963/HD-wallpaper-anime-the-journey-of-elaina-elaina-the-journey-of-elaina.jpg",
+    botImage2 : "https://images2.alphacoders.com/968/968248.jpg",
+    botImage3 : "https://images7.alphacoders.com/111/1114169.jpg",
+    botImage4 : "https://images8.alphacoders.com/111/1115208.jpg",
+    botImage5 : "https://images5.alphacoders.com/968/968250.jpgi.jpg",
+    botImage6 : "https://images2.alphacoders.com/110/1101634.jpg",
 }
 
 global.charID1 = {
