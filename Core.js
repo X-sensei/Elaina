@@ -215,7 +215,13 @@ _Don't text the Bot in pm. You will be blocked and banned soon if you continue t
 
 *〽️Developers:*
 • wa.me/15069751205
-• wa.me/916000530073`);
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Elaina✨ Powered by:_ *©️RONEN-BOTS*`);
 }
     
     if (body == prefix) {
