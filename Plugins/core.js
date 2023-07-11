@@ -13,7 +13,7 @@ let mergedCommands = [
 module.exports = {
   name: "others",
   alias: [...mergedCommands],
-  uniquecommands: ["help", "support", "report"],
+  uniquecommands: ["help", "support", "report", "info"],
   description: "All miscleaneous commands",
   start: async (Atlas, m, { pushName, prefix, inputCMD, doReact }) => {
     let pic = fs.readFileSync("./Assets/Atlas.jpg");
