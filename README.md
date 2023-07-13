@@ -15,7 +15,7 @@ Konnichiwa Senpai, I am "Elaina" an Opensource WhatsApp bot made by <a href="htt
 <br>
 
 <p align="center">
-  <a href="https://github.com/X-sensei/elaina2/fork">
+  <a href="https://github.com/X-sensei/Elaina/fork">
     <img src="https://img.shields.io/github/forks/FantoX001/Atlas-MD?label=Fork&style=social">
     
     
@@ -119,7 +119,7 @@ Konnichiwa Senpai, I am "Elaina" an Opensource WhatsApp bot made by <a href="htt
 </p>
 
 <p align="center" >
-    <a href="https://heroku.com/deploy?template=https://github.com/X-sensei/elaina2">
+    <a href="https://heroku.com/deploy?template=https://github.com/X-sensei/Elaina">
     <img src="https://www.herokucdn.com/deploy/button.png" width="160px" alt="Deploy on Heroku" >
     </a>
 
