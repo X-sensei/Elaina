@@ -115,7 +115,6 @@ const startAtlas = async () => {
           try {
             var folderName = "Plugins";
             var fileName = path.basename(pluginUrl);
-
             var filePath = path.join(folderName, fileName);
             fs.writeFileSync(filePath, body);
           } catch (error) {
