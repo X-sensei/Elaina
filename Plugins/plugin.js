@@ -146,6 +146,9 @@ module.exports = {
 *🎀 Name:* nsfw-image.js\n🔖 *Number of commands:* 1\n*🔱 Url:* https://gist.githubusercontent.com/FantoX001/804c106f1f2fb1ae46e9bd63f854069d/raw/a93191b83c0cca44abb7e0e26b55caf2892f0bb4/nsfw-image.js\n\n
 *🎀 Name:* join.js\n🔖 *Number of commands:* 1\n*🔱 Url:* https://gist.githubusercontent.com/7thRA-ONE/58746067f3e332005738c36f2a510821/raw/cb1a55baec6a7f66aa6e34ea7de2c2cca6857258/Join.js\n\n
 *🎀 Name:* hi.js\n🔖 *Number of commands:* 1\n*🔱 Url:* https://gist.githubusercontent.com/7thRA-ONE/be7c2d6fcf068afbfb0ec83ee567aa71/raw/301e0350caff116015ea5cf4356419a4bbbb32f6/hi.js\n\n
+*🎀 Name:* economy.js\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/63bcf78d6da0bce7d9f18343e3143fbc/raw/224c92477109f7082f698890fe510874da597d5c/economy.js\n\n
+*🎀 Name:* rpg.js\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/151e440d351549c896042155c223c59c/raw/2fbced16ebd14300f917248801c707d9733118ad/rpg.js\n\n
+*🎀 Name:* code-Runner.js\n*🧩 Url:* https://gist.githubusercontent.com/FantoX/8c2b76e4ed2d96eb370379a56f0cf330/raw/d3322fab57c52afd83cf83fc3f5afa493dc4e88f/code-Runner.js
 
 ⚜️ To install a plugin type *install* _plugin-url_ !\n\nExample: *${prefix}install* https://gist.githubusercontent.com/FantoX001/xyz...\n\n⚜️ To uninstall a plugin type *uninstall* _plugin-name_ !\n\nExample: *${prefix}uninstall* audioEdit.js\n`;
           await Atlas.sendMessage(m.from, { image: {url: botImage1},caption: textssf }, { quoted: m });
