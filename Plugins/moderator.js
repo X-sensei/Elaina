@@ -407,7 +407,7 @@ module.exports = {
           );
         }
         const botNames = [
-          "Atlas MD",
+          "Elaina✨",
           "Power",
           "Makima",
           "Denji",
