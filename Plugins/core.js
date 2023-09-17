@@ -63,12 +63,12 @@ module.exports = {
               file.replace(".js", "").charAt(0).toUpperCase() +
               file.replace(".js", "").slice(1);
 
-            formatted += `🔖 *${capitalizedFile}:*\n`;
+            formatted += `🔖 *Yo*`;
             //formatted += `\`\`\`${commands.join("\n")}\`\`\`\n\n\n`;
             // Adding a - before each command
-            formatted += `\`\`\`${commands
+            /*formatted += `\`\`\`${commands
               .map((cmd) => `${cmd}`)
-              .join(",")}\`\`\`\n\n`;
+              .join(",")}\`\`\`\n\n`;*/
           }
 
           return formatted.trim();
@@ -91,7 +91,7 @@ module.exports = {
           m.from,
           { video: { url: botVideo }, gifPlayback: true, caption: helpText },
           { quoted: m }
-        );
+        ); 
 
         break;
       default:
