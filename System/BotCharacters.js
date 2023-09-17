@@ -66,7 +66,7 @@ Don't forget to change "charlist.js" and "setchar.js" inside "Plugins\moderator.
 
 global.charID0 = {
     botName : "Elaina✨",
-    botVideo : "https://graph.org/file/1b33af4a675ea4902dc10.mp4",
+    botVideo : "https://graph.org/file/384db45ac5fdbf3e3a0cb.mp4",
     botImage1 : "https://images2.alphacoders.com/968/968248.jpg",
     botImage2 : "https://images2.alphacoders.com/968/968248.jpg",
     botImage3 : "https://images7.alphacoders.com/111/1114169.jpg",
