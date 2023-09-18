@@ -5,6 +5,7 @@ const axios = require("axios");
 const prefix = global.prefa;
 const { QuickDB, JSONDriver } = require("quick.db");
 global.Levels = require("discord-xp");
+Levels.setURL(mongodb)
 module.exports = async (Atlas, m, commands, chatUpdate) => {
   try {
     const jsonDriver = new JSONDriver();
