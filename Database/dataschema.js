@@ -1,4 +1,4 @@
-require("../config.js");
+require("../configuration.js");
 const config = require('../config');
 const mongoose = require("mongoose");
 const eco = require('discord-mongoose-economy');
