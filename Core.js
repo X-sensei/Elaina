@@ -202,7 +202,7 @@ module.exports = async (Atlas, m, commands, chatUpdate) => {
     }
 
    if (isCreator) {
-await doReact("🔱"); 
+await doReact('🈂️','🈵','🈺','㊙️','㊗️','🈳','🈴','🈸','🉑','🈲','🈚','🈹','🉐','🈯','🈶','🈷️'); 
 } 
 
 if (!m.isGroup && !isCreator) {
@@ -214,10 +214,9 @@ _Don't text the Bot in pm. You will be blocked and banned soon if you continue t
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developers*
 
 *〽️Developers:*
-• wa.me/15069751205
-• wa.me/916000530073
+• wa.me/994402261750
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://tinyurl.com/yw5lxtlf*
 
 *💗Have a nice day💗*
 
