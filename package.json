@@ -37,7 +37,6 @@
     "cheerio": "^1.0.0-rc.12",
     "child_process": "^1.0.2",
     "discord-xp": "^1.1.16",
-    "discord-mongoose-economy": "^1.2.0",
     "discord.js": "^14.8.0",
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
