@@ -331,7 +331,7 @@ _Elaina✨ Powered by:_ *©️RONEN-BOTS*`);
     };
     const uptime = () => formatTime(process.uptime());
 
-    let upTxt = `〘  ${botName} Public Edition  〙    ⚡ Uptime: ${uptime()}`;
+    let upTxt = ` ${botName} By Ronen-Bots     ⚡ Uptime: ${uptime()}`;
     Atlas.setStatus(upTxt);
 
     cmd.start(Atlas, m, {
