@@ -322,7 +322,7 @@ _Elaina✨ Powered by:_ *©️RONEN-BOTS*`);
 
     // ------------------------------------------------------------------------------------------------------- //
 
-    /*const pad = (s) => (s < 10 ? "0" : "") + s;
+    const pad = (s) => (s < 10 ? "0" : "") + s;
     const formatTime = (seconds) => {
       const hours = Math.floor(seconds / (60 * 60));
       const minutes = Math.floor((seconds % (60 * 60)) / 60);
@@ -330,17 +330,10 @@ _Elaina✨ Powered by:_ *©️RONEN-BOTS*`);
       return (time = `${pad(hours)}:${pad(minutes)}:${pad(secs)}`);
     };
     const uptime = () => formatTime(process.uptime());
-    let cron = require('node-cron')
-    cron.schedule('1 * * * *', async() => {
-async function updateStatus() {
-const { fetchJson } = require('../lib');	
-  var q = '`';
-  var resultt = await fetchJson(`https://api.popcat.xyz/pickuplines`);
-  var textt = resultt.pickupline;
-    let upTxt = `${textt}  ${botName} ⚡ Uptime: ${uptime()}`;
-    Atlas.setStatus(upTxt);*/
+    let upTxt = `${botName} By Ronen-Bots  ⚡ Uptime: ${uptime()}`;
+    Atlas.setStatus(upTxt);
 
-    const pad = (s) => (s < 10 ? "0" : "") + s;
+ /*   const pad = (s) => (s < 10 ? "0" : "") + s;
 
 const formatTime = (seconds) => {
   const hours = Math.floor(seconds / 3600);
@@ -364,7 +357,7 @@ cron.schedule('1 * * * *', async () => {
   }
   
   await updateStatus();
-});
+});*/
 
     cmd.start(Atlas, m, {
       name: "Atlas",
