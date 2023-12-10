@@ -180,7 +180,7 @@ module.exports = {
 // ... Other cases for existing commands
 }
     
-      default:
+      default;
         break;
     }
   },
