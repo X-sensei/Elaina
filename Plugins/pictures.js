@@ -13,6 +13,7 @@ let mergedCommands = [
   "pin",
   "pinterest",
   "imagine",
+  "ai2",
 ];
 
 module.exports = {
