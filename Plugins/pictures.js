@@ -133,6 +133,53 @@ module.exports = {
 
         break;
 
+
+
+  case "imagine":
+    const imagineEndpoint = 'http://localhost:8080/v2/imagine';
+    const authorizationHeader = '590289a6-e2e1-4b24-9af6-e8fe69fe8d5a';
+
+    if (!text) {
+      await doReact("❔");
+      return m.reply(`Please provide an Imagine prompt!\n\nExample: *${prefix}imagine A futuristic city at night*`);
+    }
+
+    await doReact("🎨");
+
+    const imagineData = {
+      prompt: text,
+      mode: "turbo"
+    };
+
+    try {
+      const imagineResponse = await axios.post(imagineEndpoint, imagineData, {
+        headers: {
+          Authorization: authorizationHeader
+        }
+      });
+
+      const generatedImage = imagineResponse.data.image; // Assuming the response structure has an "image" property
+
+      let txt = `\n_🌌 Imagine Prompt:_ *${text}*\n\n_🖼️ Generated Image_`;
+      let buttonMessage = {
+        image: { url: generatedImage },
+        caption: txt,
+      };
+
+      Atlas.sendMessage(m.from, buttonMessage, { quoted: m });
+    } catch (error) {
+      console.error("Error generating image:", error);
+      // Handle error response, perhaps send an error message back to the user
+      await doReact("❌");
+      return m.reply("Error generating image. Please try again later.");
+    }
+
+    break;
+
+// ... Other cases for existing commands
+
+}
+
       default:
         break;
     }
