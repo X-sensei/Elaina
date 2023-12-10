@@ -176,6 +176,44 @@ module.exports = {
     }
 
     break;
+
+        const axios = require('axios');
+
+// Assume that the 'doReact', 'Jimp', 'Atlas', 'm', 'quoted', 'prefix', and 'botName' variables are defined elsewhere in your code.
+
+case "ai2":
+    if (/image/.test(mime)) {
+        let mediaMess = await quoted.download();
+        await doReact("🚀");
+
+        // Convert the image to base64
+        const imageBase64 = mediaMess.toString('base64');
+
+        // Your API endpoint for image analysis
+        const apiUrl = `https://api.guruapi.tech/api/bardimg?text=${encodeURIComponent(m.text)}&image=${imageBase64}`;
+
+        // Make a POST request to the API
+        try {
+            const response = await axios.post(apiUrl);
+            const result = response.data; // Assuming the API returns the details of the image
+
+            // Handle the result, you may want to customize this part
+            Atlas.sendMessage(
+                m.from,
+                { text: `Image Details: ${JSON.stringify(result)}`, quoted: m },
+            );
+        } catch (error) {
+            console.error(error);
+            return m.reply('Error processing the image. Please try again.');
+        }
+    } else {
+        await doReact("❌");
+        return m.reply(
+            `Please mention an *image* and type *${prefix}ai2*`
+        );
+    }
+    break;
+
       default:
         break;
     }
