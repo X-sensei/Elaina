@@ -1,6 +1,7 @@
 const gis = require("g-i-s");
 const axios = require("axios");
 const hxzapi = require("hxz-api");
+const Jimp = require("jimp");
 let mergedCommands = [
   "gig",
   "gimage",
@@ -26,7 +27,7 @@ module.exports = {
     "pin",
   ],
   description: "All picture related commands",
-  start: async (Atlas, m, { inputCMD, text, doReact, prefix}) => {
+  start: async (Atlas, m, { mime, quoted, botName, inputCMD, text, doReact, prefix}) => {
     switch (inputCMD) {
       case "ppcouple":
       case "couplepp":
