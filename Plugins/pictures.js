@@ -178,9 +178,7 @@ module.exports = {
     break;
 
 // ... Other cases for existing commands
-
 }
-
       default:
         break;
     }
