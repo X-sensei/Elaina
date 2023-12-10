@@ -12,6 +12,7 @@ let mergedCommands = [
   "gif",
   "pin",
   "pinterest",
+  "imagine",
 ];
 
 module.exports = {
